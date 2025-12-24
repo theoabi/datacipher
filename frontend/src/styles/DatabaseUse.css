@@ -1,0 +1,254 @@
+.use-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.database-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.section-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: rgba(247, 241, 232, 0.7);
+}
+
+.database-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.database-pill {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: transparent;
+  color: #fdf8f1;
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.database-pill.active {
+  background: #f97316;
+  color: #1b1a16;
+  border-color: transparent;
+}
+
+.database-details {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+}
+
+.details-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.details-title {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #fff7ed;
+}
+
+.details-subtitle {
+  margin: 0.35rem 0 0;
+  font-size: 0.8rem;
+  color: rgba(247, 241, 232, 0.6);
+}
+
+.details-chip {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #fcd9c3;
+}
+
+.key-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1rem;
+  border-radius: 14px;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.key-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.key-ready {
+  font-size: 0.75rem;
+  color: #fef3c7;
+}
+
+.key-reveal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.8rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.entry-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.entry-actions {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.entries-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.entries-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.entry-item {
+  padding: 0.75rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entry-index {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(247, 241, 232, 0.6);
+}
+
+.entry-value {
+  font-size: 0.95rem;
+  color: #fdf8f1;
+}
+
+.placeholder-text {
+  margin: 0;
+  color: rgba(247, 241, 232, 0.6);
+  font-size: 0.9rem;
+}
+
+.empty-state {
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  color: rgba(247, 241, 232, 0.7);
+}
+
+.text-input {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #fff7ed;
+  color: #1b1a16;
+  font-size: 0.95rem;
+}
+
+.text-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 111, 61, 0.35);
+}
+
+.field-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #f7f1e8;
+}
+
+.primary-button {
+  background: #ff6f3d;
+  color: #1b1a16;
+  padding: 0.7rem 1.1rem;
+  border-radius: 999px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.secondary-button {
+  background: #f7f1e8;
+  color: #1b1a16;
+  padding: 0.7rem 1.1rem;
+  border-radius: 999px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ghost-button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #f7f1e8;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.status-banner {
+  background: rgba(255, 111, 61, 0.15);
+  color: #ffd2bf;
+  padding: 0.65rem 0.9rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+}
+
+.error-banner {
+  background: rgba(185, 28, 28, 0.2);
+  color: #fecaca;
+  padding: 0.65rem 0.9rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+}
+
+.mono {
+  font-family: 'IBM Plex Mono', 'SFMono-Regular', ui-monospace, monospace;
+}
+
+.small-text {
+  font-size: 0.75rem;
+}
+
+@media (min-width: 900px) {
+  .database-details {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  }
+}
